@@ -129,6 +129,8 @@
             // 
             // panelDesktop
             // 
+            this.panelDesktop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelDesktop.BackgroundImage")));
+            this.panelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelDesktop.Controls.Add(this.guna2TextBox1);
             this.panelDesktop.Controls.Add(this.label2);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -174,6 +176,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Monotype Koufi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.Location = new System.Drawing.Point(351, 32);
             this.label2.Name = "label2";

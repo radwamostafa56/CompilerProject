@@ -107,7 +107,7 @@ namespace CompilerProject
             panelTitleBar.BackColor = Color.FromArgb(0, 150, 136);
             panalLogo.BackColor = Color.FromArgb(39, 39, 58);
             currentButton = null;
-            button1.Visible = false;
+            button1.Visible = true;
         }
 
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormParser));
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
@@ -42,7 +43,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.Gray;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(321, 60);
+            this.guna2Button1.Location = new System.Drawing.Point(380, 83);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 5;
@@ -51,8 +52,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Monotype Koufi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(286, 15);
+            this.label1.Location = new System.Drawing.Point(344, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(240, 39);
             this.label1.TabIndex = 3;
@@ -60,7 +62,7 @@
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(106, 122);
+            this.treeView1.Location = new System.Drawing.Point(180, 140);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(600, 300);
             this.treeView1.TabIndex = 6;
@@ -69,10 +71,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1162, 545);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "FormParser";
             this.Text = "FormParser";
             this.ResumeLayout(false);
