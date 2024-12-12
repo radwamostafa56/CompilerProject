@@ -84,7 +84,8 @@ namespace CompilerProject
 
         private void btnScanner_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormScanner(), sender);
+			string textToPass = guna2TextBox1.Text;
+			OpenChildForm(new Forms.FormScanner(textToPass), sender);
 
         }
 
@@ -110,5 +111,16 @@ namespace CompilerProject
             button1.Visible = false;
         }
 
-    }
+		private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Start_Click(object sender, EventArgs e)
+		{
+            string textToPass = guna2TextBox1.Text;
+			var scannerForm = new Forms.FormScanner(textToPass);
+			OpenChildForm(scannerForm, null);
+		}
+	}
 }
