@@ -21,8 +21,8 @@ namespace CompilerProject.Forms
 
 		public class Token
 		{
-			public TokenType Type { get; }
-			public string Value { get; } //actual text
+			public TokenType Type { get;  }
+			public string Value { get;  } //actual text
 
 			public Token(TokenType type, string value)
 			{
@@ -42,8 +42,9 @@ namespace CompilerProject.Forms
 			(?<Keyword>\b(اذا|طالما|متغير)\b) |
 			(?<Identifier>\b[_\u0621-\u064Aa-zA-Z][_\u0621-\u064Aa-zA-Z0-9]*\b) |
 			(?<Number>\b\d+(\.\d+)?\b) |
-			(?<Operator>[+\-/*\<\>!=\==\<=\>=]) |
 			(?<Assign>[=]) |
+			(?<Operator>[+\-/*\<\>!=\==\<=\>=]) |
+
 			(?<LeftParenthesis>[\(]) |
 			(?<RightParenthesis>[\)]) |
 			(?<LeftBrace>[\{]) |
